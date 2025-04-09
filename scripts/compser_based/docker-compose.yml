@@ -1,0 +1,36 @@
+services:
+  freesurfer53:
+    image: vistalab/recon-all:latest
+    container_name: freesurfer_53
+    volumes:
+      - ./license.txt:/usr/local/freesurfer/license.txt
+      - ./input:/input
+      - ./output:/output
+    environment:
+      - FS_LICENSE=/usr/local/freesurfer/license.txt
+    stdin_open: true
+    tty: true
+
+  freesurfer60:
+    image: freesurfer/freesurfer:6.0
+    container_name: freesurfer_60
+    volumes:
+      - ./license.txt:/usr/local/freesurfer/license.txt
+      - ./input:/input
+      - ./output:/output
+    environment:
+      - FS_LICENSE=/usr/local/freesurfer/license.txt
+    stdin_open: true
+    tty: true
+
+  freesurfer741:
+    image: freesurfer/freesurfer:7.4.1
+    container_name: freesurfer_741
+    volumes:
+      - ./license.txt:/usr/local/freesurfer/license.txt
+      - ./input:/input
+      - ./output:/output
+    environment:
+      - FS_LICENSE=/usr/local/freesurfer/license.txt
+    stdin_open: true
+    tty: true

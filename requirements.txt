@@ -1,0 +1,10 @@
+numpy
+SimpleITK
+antspyx
+docker
+PyYAML
+tabulate
+pandas
+scipy
+scikit-learn
+matplotlib
